@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Spartan&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Georgina</title>
+  </head>
+  <body>
+    <div class="main_section">
+      <div class="logo">
+     
+        <img src="./georgina2.png" class="logo_img" alt="" />
+      </div>
+      <div class="btn_section">
+        <button
+          type="button"
+          class="btn"
+          data-toggle="modal"
+          data-target="#staticBackdrop"
+        >
+          Записатись
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-backdrop="static"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document" >
+            <div class="modal-content" style="width: 85%; margin: 0 auto; background: #8BBBD3;">
+              <div class="modal-header" style="height: 20px;">
+               
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <p style="margin-top: -10px !important;" aria-hidden="true">&times;</p>
+                </button>
+              </div>
+              <div class="modal-body">
+             <form action="./mail.php" method="POST">
+                 <input type="text" name="name" placeholder="Ваше Ім'я" required>
+                 <input type="text" name="phone" placeholder="Номер телефону">
+                 <div style="display: flex; text-align: left; width: 75%; margin: 0 auto;">
+                 <div>  <input style="width: 20px; margin-top: 8px;" type="checkbox" checked> 
+                 </div>
+                 <div style="margin-left:15px;"><span style="font-size: 11px;"> 
+                  Я погоджуюся на передачу персональних даних згідно з <a href="https://docs.google.com/document/d/1M0xzJ7_H0CLVOGLDzeJbrUp-IkhaVKBu_gvVuphFxpU/edit?usp=sharing"> політикою конфіденційності</a> та <a href="https://docs.google.com/document/d/1LrVsKGoVC5jC00zA3SpnV8qUT4J4huM_wswD3yf3WNg/edit?usp=sharing"> призначеною для користувача угодою </a></span>
+                  </div>
+                </div>
+                 <!-- <input type="submit" placeholder="Записатись"> -->
+                 <button class="btn" type="submit"> Записатись</button>
+                 <div style="display: flex; margin-top: 20px;">
+              
+                </div>
+             </form>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="number">
+        <a class="tel" href="callto:0(63)8636767"> <p>
+              0 (63) 863 67 67
+          </p></a> 
+          <p>
+              Графік роботи: з 9:00 До 20:00
+          </p>
+         
+          <button type="button" class=" btn_address" data-toggle="modal" data-target="#exampleModalCenter">
+            Адреса: 03189 м.Київ,
+          
+                <br>
+                 вул. Ломоносова, 50/2
+            
+          </button>
+      
+          
+      </div>
+      <div class="social">
+         <a href=" https://www.instagram.com/georginabeauty1/?utm_source=ig_profile_share&igshid=1pnlk5wnr9bxj (https://www.instagram.com/georginabeauty1/?utm_source=ig_profile_share&igshid=1pnlk5wnr9bxj)"> <img class="social_link" src="./georgina3.png" alt=""></a>
+        <a href="https://mobile.facebook.com/Georgina-Beauty-107477286464887/">  <img  class="social_link"  style="margin-left:35px" src="./georgina4.png" alt=""></a>
+       
+        
+      </div>
+      
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.9931221587104!2d30.465082629246517!3d50.38571139871666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8e190e55555%3A0xe4e7cb613d8e5751!2z0JPQsNC70LXRgNC10Y8g0LrRgNCw0YHQuCAiR2VvcmdpbmEi!5e0!3m2!1sru!2sua!4v1583326693425!5m2!1sru!2sua"  frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+  
+  </body>
+</html>
+
